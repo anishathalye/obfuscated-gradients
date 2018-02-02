@@ -31,7 +31,7 @@ We identify obfuscated gradients as a phenomenon that leads to a false sense of 
 
 For each of the three types of obfuscated gradients we discover, we describe indicators of defenses exhibiting this effect and develop attack techniques to overcome it. In a case study, examining all defenses accepted to ICLR 2018, we find obfuscated gradients are a common occurrence, with 7 of 8 defenses relying on obfuscated gradients. Using our new attack techniques, we successfully circumvent all 7 of them.
 
-For details, read our [paper](paper.pdf).
+For details, read our [paper](https://arxiv.org/abs/1802.00420).
 
 ## Source code
 
@@ -45,5 +45,6 @@ We hope to have source code available shortly. **If you're a researcher and need
   author = {Anish Athalye and Nicholas Carlini and David Wagner},
   title = {Obfuscated Gradients Give a False Sense of Security: Circumventing Defenses to Adversarial Examples},
   year = {2018},
+  url = {https://arxiv.org/abs/1802.00420},
 }
 ```
