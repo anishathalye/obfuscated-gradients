@@ -11,13 +11,15 @@ Below is Table 1 from our paper, where we show the robustness of each accepted d
 | Defense | Dataset | Distance | Accuracy |
 |---|---|---|---|
 | [Madry et al. (2018)](https://openreview.net/forum?id=rJzIBfZAb) | CIFAR | 0.031 (linf) | 47% |
-| [Buckman et al. (2018)](https://openreview.net/forum?id=S18Su--CW) | CIFAR | 0.031 (linf) | 0% |
+| [Buckman et al. (2018)](https://openreview.net/forum?id=S18Su--CW) | CIFAR | 0.031 (linf) | 0%* |
 | [Ma et al. (2018)](https://openreview.net/forum?id=B1gJ1L2aW) | CIFAR | 0.031 (linf) | 5% |
-| [Guo et al. (2018)](https://openreview.net/forum?id=SyJ7ClWCb) | ImageNet | 0.007 (l2) | 1% |
+| [Guo et al. (2018)](https://openreview.net/forum?id=SyJ7ClWCb) | ImageNet | 0.007 (l2) | 1%* |
 | [Dhillon et al. (2018)](https://openreview.net/forum?id=H1uR4GZRZ) | CIFAR | 0.031 (linf) | 0% |
-| [Xie et al. (2018)](https://openreview.net/forum?id=Sk9yuql0Z) | ImageNet | 0.031 (linf) | 0% |
-| [Song et al. (2018)](https://openreview.net/forum?id=rJUYGxbCW) | CIFAR | 0.031 (linf) | 9% |
+| [Xie et al. (2018)](https://openreview.net/forum?id=Sk9yuql0Z) | ImageNet | 0.031 (linf) | 0%* |
+| [Song et al. (2018)](https://openreview.net/forum?id=rJUYGxbCW) | CIFAR | 0.031 (linf) | 9%* |
 | [Samangouei et al. (2018)](https://openreview.net/forum?id=BkJ3ibb0-) | MNIST | 0.005 (l2) | 0% |
+
+(Defenses denoted with * also propose combining adversarial training; we report here the defense alone. See our paper, Section 5 for full numbers.)
 
 The only defense we observe that significantly increases robustness to adversarial examples within the threat model proposed is “Towards Deep Learning Models Resistant to Adversarial Attacks” ([Madry et al. 2018](https://arxiv.org/abs/1706.06083)), and we were unable to defeat this defense without stepping outside the threat model. Even then, this technique has been shown to be difficult to scale to ImageNet-scale ([Kurakin et al. 2016](https://arxiv.org/abs/1611.01236)). The remainder of the papers rely either inadvertently or intentionally on what we call *obfuscated gradients*. Standard attacks apply gradient descent to maximize the loss of the network on a given image to generate an adversarial example on a neural network. Such optimization methods require a useful gradient signal to succeed. When a defense obfuscates gradients, it breaks this gradient signal and causes optimization based methods to fail.
 
