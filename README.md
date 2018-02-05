@@ -37,8 +37,10 @@ For details, read our [paper](https://arxiv.org/abs/1802.00420).
 
 ## Source code
 
-This repository contains our instantiations of the general attack techniques described in our paper, breaking 7 of the ICLR 2018 defenses. Some of the defenses didn't release source code, so we had to reimplement them. This repository contains our reimplementations as well.
-We hope to have source code available shortly. **If you're a researcher and need access now, please email us, and we'll send you a copy of the code.**
+This repository contains our instantiations of the general attack techniques
+described in our paper, breaking 7 of the ICLR 2018 defenses. Some of the
+defenses didn't release source code (at the time we did this work), so we had
+to reimplement them.
 
 ## Citation
 
