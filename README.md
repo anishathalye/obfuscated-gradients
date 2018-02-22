@@ -29,9 +29,7 @@ We identify three ways in which defenses cause obfuscated gradients, and constru
 
 **Abstract:**
 
-We identify obfuscated gradients as a phenomenon that leads to a false sense of security in defenses against adversarial examples. While defenses that cause obfuscated gradients appear to defeat optimization-based attacks, we find defenses relying on this effect can be circumvented.
-
-For each of the three types of obfuscated gradients we discover, we describe indicators of defenses exhibiting this effect and develop attack techniques to overcome it. In a case study, examining all non-certified white-box-secure defenses accepted to ICLR 2018, we find obfuscated gradients are a common occurrence, with 7 of 8 defenses relying on obfuscated gradients. Using our new attack techniques, we successfully circumvent all 7 of them.
+We identify obfuscated gradients, a kind of gradient masking, as a phenomenon that leads to a false sense of security in defenses against adversarial examples. While defenses that cause obfuscated gradients appear to defeat iterative optimization-based attacks, we find defenses relying on this effect can be circumvented. For each of the three types of obfuscated gradients we discover, we describe characteristic behaviors of defenses exhibiting this effect and develop attack techniques to overcome it. In a case study, examining non-certified white-box-secure defenses at ICLR 2018, we find obfuscated gradients are a common occurrence, with 7 of 8 defenses relying on obfuscated gradients. Our new attacks successfully circumvent 6 completely and 1 partially.
 
 For details, read our [paper](https://arxiv.org/abs/1802.00420).
 
