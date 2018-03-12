@@ -36,5 +36,6 @@ fetch() {
 
 cd ..
 fetch https://github.com/anishathalye/obfuscated-gradients/releases/download/v0/cifar10_data.tgz cifar10_data 6d011cbb029aec2c18dc10bce32adea9e27c2068
+mkdir -p models
 cd models
 fetch https://github.com/anishathalye/obfuscated-gradients/releases/download/v0/model_standard.tgz models/standard 06e6c6fb91f7b7f3bbf9bfeb769f3ad8e10b2cd6
