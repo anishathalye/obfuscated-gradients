@@ -9,3 +9,13 @@ Run `./setup.sh` to fetch models.
 ## Breaks
 
 * Random resize/pad: `randomization.ipynb` (broken with EOT)
+
+## [robustml] evaluation
+
+Run with:
+
+```bash
+python robustml_attack.py --imagenet-path <path>
+````
+
+[robustml]: https://github.com/robust-ml/robustml
