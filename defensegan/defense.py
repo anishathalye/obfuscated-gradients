@@ -33,7 +33,8 @@ LAMBDA = 10 # Gradient penalty lambda hyperparameter
 CRITIC_ITERS = 5 # How many critic iterations per generator iteration
 BATCH_SIZE = 64 # Batch size
 ITERS = 200000 # How many generator iterations to train for
-OUTPUT_DIM = 748 # Number of pixels in CIFAR10 (3*32*32)
+OUTPUT_DIM_CIFAR10 = 3072 # Number of pixels in CIFAR10 (3*32*32)
+OUTPUT_DIM_MNIST = 784 # Number of pixels in MNIST (1*28*28)
 
 lib.print_model_settings(locals().copy())
 
@@ -76,7 +77,7 @@ def Generator(n_samples, noise=None):
     output = lib.ops.deconv2d.Deconv2D('Generator.5', DIM, 1, 5, output)
     output = tf.nn.sigmoid(output)
 
-    output =  tf.reshape(output, [-1, OUTPUT_DIM])
+    output =  tf.reshape(output, [-1, OUTPUT_DIM_MNIST])
 
     output = tf.reshape(output, [-1, 1, 28, 28])
     output = tf.transpose(output, [0, 2, 3, 1])
