@@ -43,10 +43,12 @@ to reimplement them.
 ## Citation
 
 ```
-@unpublished{obfuscated-gradients,
+@inproceedings{obfuscated-gradients,
   author = {Anish Athalye and Nicholas Carlini and David Wagner},
   title = {Obfuscated Gradients Give a False Sense of Security: Circumventing Defenses to Adversarial Examples},
+  booktitle = {Proceedings of the 35th International Conference on Machine Learning, {ICML} 2018},
   year = {2018},
+  month = jul,
   url = {https://arxiv.org/abs/1802.00420},
 }
 ```
