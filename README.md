@@ -10,7 +10,6 @@ Below is Table 1 from our paper, where we show the robustness of each accepted d
 
 | Defense | Dataset | Distance | Accuracy |
 |---|---|---|---|
-| [Madry et al. (2018)](https://openreview.net/forum?id=rJzIBfZAb) | CIFAR | 0.031 (linf) | 47% |
 | [Buckman et al. (2018)](https://openreview.net/forum?id=S18Su--CW) | CIFAR | 0.031 (linf) | 0%* |
 | [Ma et al. (2018)](https://openreview.net/forum?id=B1gJ1L2aW) | CIFAR | 0.031 (linf) | 5% |
 | [Guo et al. (2018)](https://openreview.net/forum?id=SyJ7ClWCb) | ImageNet | 0.005 (l2) | 0%* |
@@ -18,6 +17,8 @@ Below is Table 1 from our paper, where we show the robustness of each accepted d
 | [Xie et al. (2018)](https://openreview.net/forum?id=Sk9yuql0Z) | ImageNet | 0.031 (linf) | 0%* |
 | [Song et al. (2018)](https://openreview.net/forum?id=rJUYGxbCW) | CIFAR | 0.031 (linf) | 9%* |
 | [Samangouei et al. (2018)](https://openreview.net/forum?id=BkJ3ibb0-) | MNIST | 0.005 (l2) | 55%** |
+| [Madry et al. (2018)](https://openreview.net/forum?id=rJzIBfZAb) | CIFAR | 0.031 (linf) | 47% |
+| [Na et al. (2018)](https://arxiv.org/abs/1708.02582) | CIFAR | 0.015 (linf) | 15% |
 
 (Defenses denoted with * also propose combining adversarial training; we report here the defense alone. See our paper, Section 5 for full numbers. The fundemental principle behind the defense denoted with ** has 0% accuracy; in practice defense imperfections cause the theoretically optimal attack to fail, see Section 5.4.2 for details.)
 
