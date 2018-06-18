@@ -36,7 +36,7 @@ fetch() {
 cd data
 
 fetch \
-    http://alpha.openai.com/pxpp.zip \
+    'https://www.dropbox.com/s/we5cltujdlhuxr8/pxpp.zip?dl=1' \
     params_cifar.ckpt c0913e0aea902ad33dde81c96b3d8cea8c0687e9
 
 fetch \
