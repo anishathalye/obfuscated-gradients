@@ -9,3 +9,13 @@ Run `./setup.sh` to fetch models.
 ## Breaks
 
 * Randomization: EoT over ensembled randomness
+
+## [robustml] evaluation
+
+Run with:
+
+```bash
+python robustml_attack.py --cifar-path <path>
+````
+
+[robustml]: https://github.com/robust-ml/robustml
