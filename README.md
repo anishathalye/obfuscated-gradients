@@ -4,7 +4,7 @@
 
 Above is an [adversarial example](https://blog.openai.com/adversarial-example-research/): the slightly perturbed image of the cat fools an InceptionV3 classifier into classifying it as "guacamole". Such "fooling images" are [easy to synthesize](http://www.anishathalye.com/2017/07/25/synthesizing-adversarial-examples/) using gradient descent ([Szegedy et al. 2013](https://arxiv.org/abs/1312.6199)).
 
-In our recent paper, we evaluate the robustness of nine papers accepted to ICLR 2018 as non-certified white-box-secure defenses to adversarial examples. We find that seven of the eight defenses provide a limited increase in robustness and can be broken by improved attack techniques we develop.
+In our recent paper, we evaluate the robustness of nine papers accepted to ICLR 2018 as non-certified white-box-secure defenses to adversarial examples. We find that seven of the nine defenses provide a limited increase in robustness and can be broken by improved attack techniques we develop.
 
 Below is Table 1 from our paper, where we show the robustness of each accepted defense to the adversarial examples we can construct:
 
