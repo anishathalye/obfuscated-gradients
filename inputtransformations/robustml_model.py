@@ -33,7 +33,7 @@ class InputTransformations(robustml.model.Model):
             raise ValueError('invalid defense: %s' % defense)
 
         self._dataset = robustml.dataset.ImageNet((299, 299, 3))
-        self._threat_model = robustml.threat_model.L2(epsilon=0.005*(299*299))
+        self._threat_model = robustml.threat_model.L2(epsilon=0.05*299) # 0.05 * sqrt(299*299)
 
     @property
     def dataset(self):

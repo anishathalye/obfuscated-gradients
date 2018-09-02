@@ -12,7 +12,7 @@ Below is Table 1 from our paper, where we show the robustness of each accepted d
 |---|---|---|---|
 | [Buckman et al. (2018)](https://openreview.net/forum?id=S18Su--CW) | CIFAR | 0.031 (linf) | 0%* |
 | [Ma et al. (2018)](https://arxiv.org/abs/1801.02613) | CIFAR | 0.031 (linf) | 5% |
-| [Guo et al. (2018)](https://arxiv.org/abs/1711.00117) | ImageNet | 0.005 (l2) | 0%* |
+| [Guo et al. (2018)](https://arxiv.org/abs/1711.00117) | ImageNet | 0.05 (l2) | 0%* |
 | [Dhillon et al. (2018)](https://arxiv.org/abs/1803.01442) | CIFAR | 0.031 (linf) | 0% |
 | [Xie et al. (2018)](https://arxiv.org/abs/1711.01991) | ImageNet | 0.031 (linf) | 0%* |
 | [Song et al. (2018)](https://arxiv.org/abs/1710.10766) | CIFAR | 0.031 (linf) | 9%* |
