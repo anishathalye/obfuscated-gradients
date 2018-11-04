@@ -175,7 +175,7 @@ class Model(object):
     x = tf.reshape(x, [tf.shape(x)[0], -1])
     w = tf.get_variable(
         'DW', [prod_non_batch_dimensions, out_dim],
-        initializer=tf.uniform_unit_scaling_initializer(factor=1.0))
+        initializer=tf.initializers.variance_scaling(scale=1.0))
     b = tf.get_variable('biases', [out_dim],
                         initializer=tf.constant_initializer())
     return tf.nn.xw_plus_b(x, w, b)
