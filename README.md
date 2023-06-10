@@ -43,7 +43,7 @@ to reimplement them.
 
 ## Citation
 
-```
+```bibtex
 @inproceedings{obfuscated-gradients,
   author = {Anish Athalye and Nicholas Carlini and David Wagner},
   title = {Obfuscated Gradients Give a False Sense of Security: Circumventing Defenses to Adversarial Examples},
